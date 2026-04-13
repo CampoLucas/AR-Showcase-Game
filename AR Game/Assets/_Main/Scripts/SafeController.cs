@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using AR.UI.VFX;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class SafeController : MonoBehaviour
@@ -43,15 +39,14 @@ public class SafeController : MonoBehaviour
         {
             confetti.Stop();
         }
-        
-        animator.Play(idleAnimation);
+        //animator.Play(idleAnimation);
 
         if (_confettiEnabled)
         {
             confetti.Play();
         }
         
-        animator.Play(GetAnimation());
+        animator.Play(GetAnimation(), 0, .01f);
     }
 
     public void Stop()

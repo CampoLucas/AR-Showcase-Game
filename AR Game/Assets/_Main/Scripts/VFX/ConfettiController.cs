@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace AR.UI.VFX
 {
@@ -10,25 +9,25 @@ namespace AR.UI.VFX
         public Action OnPlay;
         public Action OnStop;
         
-        [SerializeField] private ParticleSystem particleSystem;
+        [FormerlySerializedAs("particleSystem")] [SerializeField] private ParticleSystem particle;
 
-        public bool IsPlaying() => particleSystem.isPlaying;
+        public bool IsPlaying() => particle.isPlaying;
         
         public void Play()
         {
             OnPlay?.Invoke();
-            particleSystem.Play();
+            particle.Play();
         }
 
         public void Stop()
         {
             OnStop?.Invoke();
-            particleSystem.Stop();
+            particle.Stop();
         }
 
         public void Pause()
         {
-            particleSystem.Pause();
+            particle.Pause();
         }
 
         private void OnDestroy()
