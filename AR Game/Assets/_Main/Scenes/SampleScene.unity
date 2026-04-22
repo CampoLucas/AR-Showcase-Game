@@ -772,7 +772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5531101155898844846, guid: 1116ae6d46499f243b73500561dba8c5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: https://github.com/CampoLucas/AR-Showcase-Game
+      value: https://github.com/CampoLucas/VR-Game
       objectReference: {fileID: 0}
     - target: {fileID: 5531101155898844846, guid: 1116ae6d46499f243b73500561dba8c5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
